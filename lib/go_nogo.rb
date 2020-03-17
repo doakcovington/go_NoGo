@@ -1,6 +1,3 @@
-require "go_nogo/version"
+require_relative "./go_nogo/version"
+require_relative './go_nogo/cli'
 
-module GoNogo
-  class Error < StandardError; end
-  # Your code goes here...
-end

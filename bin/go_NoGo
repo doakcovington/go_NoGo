@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require './lib/go_nogo'
+
+GoNogo::CLI.new.call
