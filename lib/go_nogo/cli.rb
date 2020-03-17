@@ -1,11 +1,17 @@
-class GoNogo::CLI
+class GoNoGo::CLI
+    
+    # #call starts the program by asking the user for input and then displaying the menu interface
     def call
-        puts "Hello! Please Select a Mountain Pass:"
+        puts "Welcome to Go/NoGo! Start here to get up to date Pass Reports for Washington State:"
+        puts "You will be asked to input a number corresponding to a specific Mountain Pass. Please be sure you are parked before using this program!"
         menu
     end    
     
+    # #menu lists the passes in order as they appear on the WSDOT website. The passes are numbered 1-15.
     def menu
-       list_passes.each_with_index{ |pass,index| puts "#{index+1}: #{pass}"}
+        puts "Please Select a Mountain Pass By Entering the Corresponding Number:"
+        list_passes.each_with_index{ |pass,index| puts "#{index+1}: #{pass}"}
+       puts "Press 'e' to exit:"
        input = nil
        while input != 'e'
         input = gets.strip.downcase
@@ -50,9 +56,11 @@ class GoNogo::CLI
         end
     end
 
-    def list_passes
+    # Array containing the mountain passes listed on the WSDOT Website
+    def list_passes #https://www.wsdot.com/traffic/passes/
         passes = ["Blewett Pass","Cayuse Pass","Chinook Pass","Crystal to Greenwater","Disautel Pass","Loup Loup Pass","Manastash Ridge","Mt. Baker Hwy","North Cascades Hwy",
                 "Satus Pass","Sherman Pass","Snoqualmie Pass","Stevens Pass","Wauconda Pass","White Pass",]
+        #@pass = GoNoGo::Pass
     end
 
     def exit_program

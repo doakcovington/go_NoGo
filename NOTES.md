@@ -31,3 +31,11 @@ Show a list of mountain passes
     15. White Pass
 
 "Which Mountain Pass would you like more information on?"
+
+What information does a pass report contain?
+ - Name
+ - Temperature
+ - Restrictions Eastbound
+ - Restrictions Westbound
+ - Conditions
+ - Weather
