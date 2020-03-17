@@ -2,7 +2,7 @@ require_relative 'lib/go_nogo/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "go_nogo"
-  spec.version       = GoNogo::VERSION
+  spec.version       = GoNoGo::VERSION
   spec.authors       = ["doakcovington"]
   spec.email         = ["doakcovington@protonmail.com"]
 
