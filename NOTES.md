@@ -1,6 +1,6 @@
 How to Build a CLI Gem
     1. Plan your gem, imagine your interface
-    2. Start with the project structure - google
+    2. Start with the project structure
     3. Start with the entry point - the file run
     4. Force that to build the CLI Interface
     5. Stub out the interface

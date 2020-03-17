@@ -2,4 +2,4 @@
 
 require './lib/go_nogo'
 
-GoNogo::CLI.new.call
+GoNogo::CLI.new.menu
