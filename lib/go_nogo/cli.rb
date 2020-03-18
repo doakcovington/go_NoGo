@@ -1,4 +1,4 @@
-class GoNoGo::CLI
+class GoNoGo::Pass::CLI
     
     # #call starts the program by asking the user for input and then displaying the menu interface
     def call
@@ -17,7 +17,7 @@ class GoNoGo::CLI
         input = gets.strip.downcase
         case input
         when "1"
-            puts "Blewett Pass"
+            self.passes
         when "2"
             puts "Cayuse Pass"
         when "3"
